@@ -64,7 +64,7 @@ function setMovieHtml(id, poster, title, rating, runtime, genre, synopsis) {
 //fetches data with the named value
 const getPoster = async (value) => {
   const res = await fetch(
-    `http://www.omdbapi.com/?s=${value}&apikey=${apiKey}`
+    `https://www.omdbapi.com/?s=${value}&apikey=${apiKey}`
   );
   const data = await res.json();
   let dataArray = data.Search;
