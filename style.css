@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;900&display=swap');
+
+body{ 
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.nav{
+    background-image: url(images/nav\ img.jpg);
+    background-size: cover;
+    height: 33vh; 
+}
+
+.head{
+    background: rgba(0, 0, 0, 0.76);
+    height: 33vh;
+    padding: 0% 8% 0% 8%;
+}
+.headCover{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding-top: 13vh;
+}
+
+.headCover h1{
+   margin: auto auto auto 0;
+   color: white;
+   text-align: left;
+   font-size: 42px;
+   vertical-align: middle;
+   letter-spacing: .05em;
+   opacity: .9;
+}
+
+.headCover button{
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+    height: 20px;
+    font-weight: 700;
+    font-size: 17px;
+    width: fit-content;
+    margin: auto;
+    opacity: .9;
+}
+
+.search{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin: -2.2vh 8% 0% 8%;
+    height: 40px;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+    background-color: white;
+}
+
+.search input{
+    background: none;
+    border: none;
+    border-right: 1px solid #D1D5DB;
+    background-image: url(./images/mag.svg);
+    background-repeat: no-repeat;
+    background-position: 0%;
+    background-position: 1em;
+    padding-left: 40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #6B7280;
+}
+
+.search input::placeholder{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #6B7280;
+}
+
+.search button{
+    background: #F9FAFB;;
+    border: none;
+    border-radius: 0px 6px 6px 0px ;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #374151;
+    cursor: pointer;
+}
+
+.main{
+    padding: 0% 8% 0% 8%;
+}
+
+.tempMain{
+    margin-top: 24vh;
+    text-align: center;
+}
+
+.main-content{
+    margin-top: 10vh;
+}
+
+object{
+    width: 100px;
+    height: 100px;
+}
+
+.main .main-content h3{
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #DFDDDD;
+}
+
+.movieEl{
+    display: grid;
+    grid-template-columns: .5fr 3fr;
+    border-bottom: 2px solid #E5E7EB;
+    column-gap: 23px;
+    padding: 30px;
+}
+
+
+
+.movieEl .moviePoster{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.movieEl .movieTitle, .movieInfo{
+    grid-column: 2/3;
+}
+
+.movieTitle{
+    display: flex;
+    text-align: left;
+    height: 50px;
+}
+
+.movieTitle h4{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.movieTitle p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #111827;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.movieInfo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.movieInfo h5{
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    
+    color: #111827;
+}
+
+.movieInfo .watchLater{
+    border: none;
+    background: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    color: #111827;
+    background-image: url(./images/plus-icon.svg);
+    background-repeat: no-repeat;
+    background-position: 0%;
+    padding-left: 20px;
+    cursor: pointer;
+    text-align: left;
+    height: 20px;
+}
+
+.movieInfo .watchLaterAdded{
+    border: none;
+    background: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    color: #111827;
+    background-position: 0%;
+    padding-left: 20px;
+    cursor: pointer;
+    text-align: left;
+    height: 20px;
+}
+
+.runtime, .genre{
+    top: 50%;
+}
+
+.synopsisParagraph{
+    grid-column: 1/4;
+    text-align: left;
+    color: #6B7280;
+}
+
+.unableToFind{
+    margin-top: 30vh;
+    text-align: center;
+}
+
+.removeStyle{
+    background-image: url(./images/minus-icon.svg)!important;
+    background-repeat: no-repeat!important;
+    background-position: 0%;
+}
+
+
