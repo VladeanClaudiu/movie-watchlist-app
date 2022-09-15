@@ -73,7 +73,7 @@ const getPoster = async (value) => {
     //map through all search results and fetches the movies data using the imdbID from the previous fetch request
     const movieID = dataArray.map(async (movie) => {
       const res = await fetch(
-        `http://www.omdbapi.com/?i=${movie.imdbID}&apikey=${apiKey}`
+        `https://www.omdbapi.com/?i=${movie.imdbID}&apikey=${apiKey}`
       );
       const data = res.json();
       return data;
